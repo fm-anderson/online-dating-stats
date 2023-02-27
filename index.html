@@ -18,17 +18,81 @@
   <body class="page">
     <div class="page__content">
       <header class="header">
+ html-layout
+        header
+        <!--I was thinking to have 100vh(-10?) header
+        Layout: 
+        "LOGO LOGO LOGO"       "Title Title Title"  "nav links?"
+        "LOGO LOGO LOGO"       "Title Title Title   Title Title"-->
         <!-- TODO: CREATE LOGO -->
         <img
           src="./assets/images/temp-logo.png"
           alt="project-logo"
           class="header__logo"
         />
+
       </header>
 
       <main>
-        <section></section>
+        <section>
+          essays
+          <ul class="essays__container">
+
+          </ul>
+          <button>Get random essays</button>
+
+          <!-- We are goting to have random essays here
+          i think we could do template with math.random function
+          Layout: 
+          "essay essay essay essay"         "essay essay essay essay"
+                          'caption'                         'caption'
+          "essay essay essay essay"         "essay essay essay essay"
+                          'caption'                         'caption'-->
+        </section>
+        <section>
+          analisys
+            <!-- analisys info, 
+            I think we should decide what we are doing here after we will recieve
+            info from data coz i dont really know hom much information we will have there
+            -->
+        </section>
+        <section>
+          visualisation of data
+          <!--
+            Here is analisys ingormation, i was thinking we can do 2-3 diagrams(depends on vh) 
+          with some expanatory text from data guys. 
+          div container(grid maybe?)
+            p - child with text ------------ diagrgam
+          div container(grid maybe?)
+            p - child with text ------------ diagrgam
+          div container(grid maybe?)
+            p - child with text ------------ diagrgam
+          -->
+        </section>
+        <section>
+          <button>Please press me</button>
+          <!-- Ready to dive in dating? - section
+          Thast where i see our form button, we can use poppup like we had in arund-the-us project
+          but we need to clerify what info we are collecting so we can compare it to 
+          data(honesly i think this is the hardest part, but it should be impressive for jujes)-->
+        </section>
+        <section>
+          report
+          <!-- Conclusions - section
+            Thats where we will have our report based on info we've collected
+            to decide what are we going to show there we need to finish our form
+          -->
+        </section>
       </main>
+      <template id="essay__template">
+        <!--here is exaple of teplate
+        "paragraph"
+                "caption(we can use any aditional info from database 'age, sex.....')"-->
+        <li class="essay">
+          <p class="essay__paragraph"></p>
+          <p class="essay__caption"></p>
+        </li>
+      </template>
 
       <footer class="footer">
         <p class="footer__copywrite">&copy; 2023 Online Dating Stats</p>
