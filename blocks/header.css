@@ -1,12 +1,112 @@
 .header {
   max-width: 880px;
+  max-height: calc(100vh - 10%);
   margin: 45px 0 40px;
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__logo {
   align-self: center;
   padding-bottom: 41px;
+}
+
+.header__text-container{
+  max-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;  
+  grid-template-areas:
+      "title button"       
+      "subtitle subtitle";
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 1fr 1fr;  
+  padding-right: 16px;  
+}
+.header__title{
+  max-width: fit-content;
+  grid-area: title;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;  
+  margin: 0;
+  letter-spacing: 0em;
+  text-align: left;  
+  
+}
+.header__subtitle{
+  display: grid;
+  grid-area: subtitle;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;  
+  margin: 0;  
+  letter-spacing: 0em;
+  text-align: left;  
+}
+.header__nav{    
+  position: relative;
+  display: inline-block;
+  
+  
+}
+
+.header__nav-button{  
+  background: no-repeat center/80% url(../assets/images/Menu-fold-01.png);  
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border: none;
+  grid-area: button;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.header__links{
+  border-radius: 10px;
+  opacity: 0;  
+  position: absolute;  
+  background-color: brown; 
+  white-space: nowrap;
+  box-shadow: 10px 10px 10px black;
+  z-index: 1;
+  transition: all 0.5s ease-in-out 0.3s;
+  transform: translateY(-10px);
+  
+}
+
+
+
+.header__link{
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  line-height: 1.2;
+  transition: color 0.4s linear 0s;
+
+}
+
+.header__nav-button:hover {
+  transform: rotate(-90deg);
+}
+
+.header__link:hover{  
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.header__nav:hover .header__links{
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @media screen and (max-width: 500px) {
