@@ -1,9 +1,7 @@
 .header {
   max-width: 880px;
   max-height: calc(100vh - 10%);
-  margin: 45px 0 40px;
-  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
-  
+  margin: 45px 0 40px;  
 }
 
 .header__container{
@@ -12,7 +10,7 @@
 }
 
 .header__logo {
-  align-self: center;
+  align-self: flex-start;
   padding-bottom: 41px;
 }
 

@@ -3,6 +3,9 @@
 
 @import url(../blocks/page.css);
 @import url(../blocks/header.css);
+@import url(../blocks/essays.css);
+@import url(../blocks/essay.css);
+@import url(../blocks/analisys.css);
 
 /* 
 font-family: 'Golos Text', Arial, sans-serif;
