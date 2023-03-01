@@ -1,0 +1,22 @@
+.essay{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 10px 10px 10px black;;
+}
+
+.essay__paragraph{
+    align-self: flex-start;
+}
+
+.essay__caption{    
+    align-self: flex-end;
+    padding: 5px;
+}
+
+.essays__button:hover{
+    cursor: pointer;
+    color: green;
+}
