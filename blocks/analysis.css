@@ -1,4 +1,4 @@
-.analisys{
+.analysis{
     max-width: 880px;    
     margin: auto;    
     text-align: center;
@@ -6,25 +6,29 @@
     
 }
 
-.analisys__title{
+.analysis__container{
+    max-width: calc(100% - 30px);
+}
+
+.analysis__title{
     margin: auto;    
     padding: 25px;
     
 }
 
-.analisys__text{
+.analysis__text{
     text-align: justify;    
     
 }
 
-.analisys__image{
+.analysis__image{
     float: right;
     border-radius: 70%;
     margin-right: -70px;
     overflow: hidden;
 }
 
-.analisys__image-left{
+.analysis__image-left{
     float: left;
     margin-left: -70px;
     margin-right: 0;    
