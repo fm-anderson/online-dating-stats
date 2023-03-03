@@ -1,0 +1,36 @@
+.analysis{
+    max-width: 880px;    
+    margin: auto;    
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.analysis__container{
+    max-width: calc(100% - 30px);
+}
+
+.analysis__title{
+    margin: auto;    
+    padding: 25px;
+    
+}
+
+.analysis__text{
+    text-align: justify;    
+    
+}
+
+.analysis__image{
+    float: right;
+    border-radius: 70%;
+    margin-right: -70px;
+    overflow: hidden;
+}
+
+.analysis__image-left{
+    float: left;
+    margin-left: -70px;
+    margin-right: 0;    
+}
+

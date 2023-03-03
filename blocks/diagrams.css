@@ -1,0 +1,35 @@
+.diagrams{
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+    max-width: 880px;
+    margin: auto;
+
+}
+
+.diagrams__title{
+    text-align: center;
+}
+
+.diagrams__conatiner-parent{
+    width: calc(100% - 10px);
+}
+
+.diagrams__conatiner-child{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
+.diagrams__paragraph{
+    text-align: justify;
+    max-width: 45%;
+}
+
+.diagrams__diagram{
+    max-width: 45%;    
+    height: 300px;
+    overflow: hidden;
+
+}
