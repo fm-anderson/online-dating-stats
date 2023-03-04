@@ -1,0 +1,32 @@
+.report{
+    max-width: 400px;
+    max-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.report__title{
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+}
+
+.report__paragraph{
+    margin: auto;    
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
