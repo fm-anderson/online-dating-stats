@@ -18,11 +18,7 @@
   <body class="page">
     <div class="page__content">
       <header class="header">
-        <!--I was thinking to have 100vh(-10?) header
-        Layout: 
-        "LOGO LOGO LOGO"       "Title Title Title"  "nav links?"
-        "LOGO LOGO LOGO"       "Title Title Title   Title Title"-->
-        <!-- TODO: CREATE LOGO -->
+        
         <div class="header__container">
           <img
             src="./assets/images/temp-logo.png"
@@ -74,9 +70,7 @@
 
           </ul>        
 
-          <!-- We are goting to have random essays here
-          i think we could do template with math.random function
-          -->
+          
         </section>
         <section class="analysis">          
           <h2 class="analysis__title">Fun facts about our analysis</h2>
@@ -102,10 +96,7 @@
           </div>
           
 
-          <!-- analysis info, 
-            I think we should decide what we are doing here after we will recieve
-            info from data coz i dont really know hom much information we will have there
-            -->
+          
         </section>
         <section class="diagrams">
           <h3 class="diagrams__title">Our fun data</h3>
@@ -143,36 +134,89 @@
               </div>              
             </div>
           </div>          
-          <!--
-            Here is analisys ingormation, i was thinking we can do 2-3 diagrams(depends on vh) 
-          with some expanatory text from data guys. 
-          div container(grid maybe?)
-            p - child with text ------------ diagrgam
-          div container(grid maybe?)
-            p - child with text ------------ diagrgam
-          div container(grid maybe?)
-            p - child with text ------------ diagrgam
-          -->
-        </section>
-        <section class="">
-          <button>Please press me</button>
-          <!-- Ready to dive in dating? - section
-          Thast where i see our form button, we can use poppup like we had in arund-the-us project
-          but we need to clerify what info we are collecting so we can compare it to 
-          data(honesly i think this is the hardest part, but it should be impressive for jujes)-->
+          
         </section>
         <section>
-          report
-          <!-- Conclusions - section
-            Thats where we will have our report based on info we've collected
-            to decide what are we going to show there we need to finish our form
-          -->
-        </section>
+          <form class="form reservation__form">
+              <h4 class="form__title">Ready to join our big family?</h4>
+              <fieldset class="form__fieldset">
+                  <label for="status" class="form__label">What is your relationship status :</label>
+                  <select name = "status" class="form__select">
+                      <option value = "single" class="form__option">Single</option>
+                      <option value = "divorced" class="form__option">Divorced</option>
+                      <option value = "complicated" class="form__option">Things are complicated</option>
+                  </select>
+                  <label for="gender" class="form__label">What is your gender :</label>
+                  <select name = "gender" class="form__select">
+                      <option value = "male" class="form__option">Male</option>
+                      <option value = "female" class="form__option">Female</option>
+                      <option value = "it-they" class="form__option">It/They</option>                
+                  </select>
+  
+                  <label for="bday" class="form__label">Date of birth :</label>
+                  <input type="date" 
+                  class="form__input" 
+                  name="bday" 
+                  id="bday"
+                  onchange="submitBday()" 
+                  >
+                  <p id="resultBday" class="form__label form__bday"></p>
+  
+                  <label for="education" class="form__label">What is your education :</label>
+                  <select name = "education" class="form__select">
+                      <option value = "masters" class="form__option">Masters</option>
+                      <option value = "balchelor" class="form__option">Balchelor</option>
+                      <option value = "high-school" class="form__option">High-school</option>                
+                  </select>
+  
+                  <label for="orientation" class="form__label">I am :</label>
+                  <select name = "orientation" class="form__select">
+                      <option value = "male-male" class="form__option">male and looking for male</option>
+                      <option value = "female-female" class="form__option">female and looking for female</option>
+                      <option value = "male-female" class="form__option">male and looking for female</option>
+                      <option value = "female-male" class="form__option">female and looking for male</option>
+                      <option value = "romantic" class="form__option">human and looking true love</option>
+                  </select>
+  
+                  <label for="religion" class="form__label">My religion is :</label>
+                  <select name = "religion" class="form__select">
+                      <option value = "atheism" class="form__option">Atheism</option>
+                      <option value = "agnosticism" class="form__option">Agnosticism</option>
+                      <option value = "other" class="form__option">Other</option>
+                      <option value = "christianity" class="form__option">Christianity</option>
+                      <option value = "judaism" class="form__option">Judaism</option>                
+                  </select>
+                  <button type="submit" class="form__button">I am ready for this!</button>
+              </fieldset>
+  
+          </form>
+      </section>
+      <section class="report">
+          <h5 class="report__title">Wow! We got so much in common!</h5>
+          <div class="report__container">
+              <p class="report__paragraph report__status">
+                  You are as single as 56% of our customers, but not for too long!
+              </p>
+              <p class="report__paragraph report__gender">
+                  You are as male as 61% of our customers.
+              </p>
+              <p class="report__paragraph report__bday">
+                  You are as old as 20% of our customers, give us chance we definetly find you someone!
+              </p>
+              <p class="report__paragraph report__education">
+                  You are educated as 12% of our customers, must be nice to be a smart a**!
+              </p>
+              <p class="report__paragraph report__orientation">
+                  There are 40% of our customers who might is looking for you right now!
+              </p>
+              <p class="report__paragraph report__religion">
+                  Your religion mached with 31% of our customers, not like we are telling you who to love!
+              </p>
+          </div>
+  
+      </section>    
       </main>
-      <template id="essay__template">
-        <!--here is exaple of teplate
-        "paragraph"
-                "caption(we can use any aditional info from database 'age, sex.....')"-->
+      <template id="essay__template">        
         <li class="essay">
           <p class="essay__paragraph"></p>
           <p class="essay__caption"></p>
@@ -214,5 +258,6 @@
       </footer>
     </div>
     <script type="module" src="./scripts/index.js"></script>
+    <script src="./scripts/form.js"></script>
   </body>
 </html>

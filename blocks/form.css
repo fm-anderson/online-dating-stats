@@ -1,0 +1,101 @@
+.form{    
+    padding-bottom: 40px;
+}
+
+.form__fieldset{
+    border: none;
+    max-width: 395px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title{
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+}
+
+.form__bday{
+    text-align: center;
+}
+
+.form__input{
+    box-sizing: border-box;
+    height: 60px;
+    margin: 0;
+    margin-bottom: 32px;
+    width:100%;
+    border-radius: 4px;
+    border: #838383 solid 1px;
+    padding-left: 10px;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+
+
+.form__label{
+    display: block;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 8px;
+    
+}
+
+.form__select{
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    border-radius: 4px;
+    padding: 5px;
+    height: 60px;
+}
+
+.form__button{
+    width:100%;
+    border-radius: 4px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    background-color: #2f80ed;
+    color: #ffffff;
+    transition: 0.5s;
+    border: none;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.form__button:hover{
+    opacity: 0.7;
+}
+
+.form__input::placeholder{
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #838383;    
+}
+
+
+
